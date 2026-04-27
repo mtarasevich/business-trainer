@@ -280,7 +280,13 @@ button{font:inherit; cursor:pointer}
 .contacts__lbl{display:block; font-size:var(--fs-xs); color:var(--ink-mute); letter-spacing:.08em; text-transform:uppercase; margin-bottom:6px}
 .contacts a{color:var(--ink); font-size:var(--fs-md); font-weight:600}
 .contacts a:hover{color:var(--brand-deep)}
-@media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
+.contacts__messengers{display:flex; align-items:center; gap:10px; margin-top:14px; flex-wrap:wrap}
+.contacts__messengers-lbl{font-size:var(--fs-xs); color:var(--ink-mute)}
+.msg-btn{display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; color:#fff !important; font-size:0; transition:transform .15s ease, box-shadow .15s ease; box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.msg-btn:hover{transform:translateY(-2px); box-shadow:0 6px 14px rgba(0,0,0,.18); color:#fff !important}
+.msg-btn--tg{background:#229ED9}
+.msg-btn--viber{background:#7360F2}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr} .contacts__messengers{justify-content:flex-start}}
 
 /* ===== Form ===== */
 .form{

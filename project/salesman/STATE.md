@@ -1,8 +1,8 @@
 # State: salesman
 
 ## Current
-- Stage: 6-qa → done (PASS, round 1/3)
-- Status: ready-for-client-review
+- Stage: revision-1 (правки клиента от 27-Apr-26) → done
+- Status: ready-for-client-review (v2)
 - Blocker: none
 
 ## Server
@@ -17,8 +17,9 @@
 - 2026-04-25 — stage 4 done (designer, round 1)
 - 2026-04-25 — stage 5 done (developer, round 1, 5.7 MB build)
 - 2026-04-25 — stage 6 done (qa, round 1, PASS)
+- 2026-04-27 — revision-1 (минимальные правки): кейс 1 переписан, «коуч/коучинг» → «индивидуальные сессии», контакты — телефон + иконки TG/Viber. Артефакты 03-content.md, 04-design.md, 05-build/ обновлены. Wild-guesses pool +2 (отзывы, замена термина — последний подтверждён клиентом).
 
-## Wild guesses count: 8
+## Wild guesses count: 10 (из них 1 закрыт, 1 новый открытый — отзывы)
 См. ASSUMPTIONS.md.
 
 ## Next
