@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Егор Лукшо — переговоры">
+  <circle cx="60" cy="60" r="56" fill="#15623C"/>
+  <!-- Left arrow (white), tip meets at center (60,60) -->
+  <path d="M16 50 L42 50 L42 38 L60 60 L42 82 L42 70 L16 70 Z" fill="#FFFFFF"/>
+  <!-- Right arrow (gold), tip meets at center -->
+  <path d="M104 50 L78 50 L78 38 L60 60 L78 82 L78 70 L104 70 Z" fill="#C9A24A"/>
+</svg>

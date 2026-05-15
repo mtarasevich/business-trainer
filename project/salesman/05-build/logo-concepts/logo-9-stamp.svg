@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Егор Лукшо — экспертная печать">
+  <defs>
+    <path id="circ-top" d="M 60 60 m -44 0 a 44 44 0 0 1 88 0"/>
+    <path id="circ-bot" d="M 60 60 m -44 0 a 44 44 0 0 0 88 0"/>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="#FBFCFA" stroke="#15623C" stroke-width="2.5"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#15623C" stroke-width="1" opacity=".5"/>
+  <text font-family="Manrope, 'Segoe UI', sans-serif" font-size="8" font-weight="700"
+        fill="#15623C" letter-spacing="2.5">
+    <textPath href="#circ-top" startOffset="50%" text-anchor="middle">ЕГОР ЛУКШО</textPath>
+  </text>
+  <text font-family="Manrope, 'Segoe UI', sans-serif" font-size="7" font-weight="600"
+        fill="#15623C" letter-spacing="2" opacity=".7">
+    <textPath href="#circ-bot" startOffset="50%" text-anchor="middle">ТРЕНЕР ПО ПРОДАЖАМ</textPath>
+  </text>
+  <text x="60" y="68" text-anchor="middle"
+        font-family="Manrope, 'Segoe UI', sans-serif" font-weight="800"
+        font-size="32" fill="#15623C" letter-spacing="-1.5">ЕЛ</text>
+  <line x1="44" y1="76" x2="76" y2="76" stroke="#C9A24A" stroke-width="1.8"/>
+  <circle cx="40" cy="60" r="1.8" fill="#15623C" opacity=".5"/>
+  <circle cx="80" cy="60" r="1.8" fill="#15623C" opacity=".5"/>
+</svg>

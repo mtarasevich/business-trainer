@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Егор Лукшо — попадание в цель">
+  <circle cx="60" cy="60" r="56" fill="#15623C"/>
+  <circle cx="60" cy="60" r="42" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".35"/>
+  <circle cx="60" cy="60" r="28" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".65"/>
+  <circle cx="60" cy="60" r="14" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="60" cy="60" r="6" fill="#C9A24A"/>
+</svg>

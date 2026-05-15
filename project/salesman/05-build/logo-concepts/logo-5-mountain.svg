@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Егор Лукшо — восхождение">
+  <circle cx="60" cy="60" r="56" fill="#FBFCFA" stroke="#15623C" stroke-width="3"/>
+  <!-- back peak -->
+  <path d="M22 90 L46 56 L60 72 L60 90 Z" fill="#1E7F4F" opacity=".55"/>
+  <!-- front peak -->
+  <path d="M30 90 L60 44 L82 70 L98 90 Z" fill="#15623C"/>
+  <!-- gold summit -->
+  <path d="M54 52 L60 44 L66 52 Z" fill="#C9A24A"/>
+  <!-- baseline -->
+  <rect x="20" y="90" width="80" height="3" fill="#15623C" opacity=".25"/>
+</svg>

@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Логотип — концепты · Егор Лукшо</title>
+<title>Логотип — 10 концептов · Егор Лукшо</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap">
 <style>
   :root{
     --bg:#FBFCFA; --bg-alt:#F1F5EE; --ink:#0F1A14; --ink-soft:#46524A; --ink-mute:#7A857F;
-    --line:#DDE4DA; --brand:#1E7F4F; --brand-deep:#15623C;
+    --line:#DDE4DA; --brand:#1E7F4F; --brand-deep:#15623C; --accent:#C9A24A;
   }
   *{box-sizing:border-box}
   body{margin:0; background:var(--bg); color:var(--ink); font-family:"Inter",system-ui,sans-serif; line-height:1.55; padding:48px 24px 80px}
@@ -16,196 +16,225 @@
   h1{font-size:2.25rem; font-weight:800}
   h2{font-size:1.4rem; font-weight:700; margin-top:0}
   h3{font-size:.95rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-mute); margin:0 0 10px}
+  a{color:var(--brand-deep)}
   .wrap{max-width:1200px; margin:0 auto}
-  .intro{max-width:780px; color:var(--ink-soft); margin-bottom:48px}
+  .intro{max-width:780px; color:var(--ink-soft); margin-bottom:32px}
   .intro p{margin:0 0 10px}
-  .concept{background:#fff; border:1px solid var(--line); border-radius:16px; padding:32px; margin-bottom:32px}
-  .concept__head{display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; margin-bottom:24px}
-  .concept__head > div:first-child{flex:1; min-width:280px}
-  .concept__head p{margin:0; color:var(--ink-soft); max-width:640px}
-  .specs{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:24px}
-  .spec{background:var(--bg-alt); border-radius:12px; padding:24px; display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center}
+  .toc{background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px 24px; margin-bottom:40px}
+  .toc h3{margin-bottom:14px}
+  .toc ol{margin:0; padding-left:22px; columns:2; column-gap:32px}
+  @media (max-width:600px){.toc ol{columns:1}}
+  .toc li{padding:4px 0; break-inside:avoid}
+  .concept{background:#fff; border:1px solid var(--line); border-radius:16px; padding:28px 32px; margin-bottom:28px; scroll-margin-top:24px}
+  .concept__head{margin-bottom:20px}
+  .concept__head p{margin:0; color:var(--ink-soft); max-width:720px}
+  .specs{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:18px}
+  .spec{background:var(--bg-alt); border-radius:12px; padding:22px 18px; display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center}
   .spec--dark{background:#0F1A14; color:#fff}
   .spec--dark h3{color:rgba(255,255,255,.5)}
   .spec--brand{background:var(--brand-deep); color:#fff}
   .spec--brand h3{color:rgba(255,255,255,.6)}
-  .spec img{display:block}
+  .spec img{display:block; max-width:100%; height:auto}
   .with-wordmark{display:flex; align-items:center; gap:14px}
-  .with-wordmark .name{font-family:"Manrope",sans-serif; font-weight:800; font-size:1.35rem; letter-spacing:-.02em}
+  .with-wordmark .name{font-family:"Manrope",sans-serif; font-weight:800; font-size:1.25rem; letter-spacing:-.02em}
   .spec--dark .name, .spec--brand .name{color:#fff}
-  .scale{display:flex; align-items:flex-end; gap:18px; padding:14px 0}
-  .label{font-size:.78rem; color:var(--ink-mute); text-transform:uppercase; letter-spacing:.06em; font-weight:600}
+  .label{font-size:.75rem; color:var(--ink-mute); text-transform:uppercase; letter-spacing:.06em; font-weight:600}
   .spec--dark .label, .spec--brand .label{color:rgba(255,255,255,.55)}
   .pros{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:20px}
   .pros ul{margin:0; padding-left:20px; color:var(--ink-soft); font-size:.92rem}
-  .pros h4{margin:0 0 6px; font-size:.85rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-mute); font-weight:700; font-family:"Manrope",sans-serif}
+  .pros h4{margin:0 0 6px; font-size:.8rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-mute); font-weight:700; font-family:"Manrope",sans-serif}
   @media (max-width:780px){
     .specs{grid-template-columns:1fr}
     .pros{grid-template-columns:1fr}
+    body{padding:32px 14px 64px}
+    .concept{padding:24px 20px}
   }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>Логотип — 3 концепта</h1>
+  <h1>Логотип — 10 концептов</h1>
   <div class="intro">
-    <p>Все три варианта работают в фирменной палитре сайта: тёмно-зелёный <code>#15623C</code>, основной зелёный <code>#1E7F4F</code> и золотистый акцент <code>#C9A24A</code>.</p>
-    <p>Каждый показан в трёх вариантах: на светлом фоне, на тёмном и на брендовом зелёном. И в двух размерах — крупно (как в hero / на визитке) и в обычном размере шапки (40×40).</p>
+    <p>Все варианты в фирменной палитре сайта: тёмно-зелёный <code>#15623C</code>, основной зелёный <code>#1E7F4F</code>, золотистый акцент <code>#C9A24A</code>.</p>
+    <p>Каждый показан в трёх вариантах фона (светлый / тёмный / брендовый) и в двух размерах — крупно (как в hero / на визитке) и 40 px (как в шапке сайта, рядом с именем).</p>
   </div>
 
-  <!-- CONCEPT 1 -->
-  <section class="concept">
+  <nav class="toc">
+    <h3>Содержание</h3>
+    <ol>
+      <li><a href="#c1">Монограмма «ЕЛ» в круге</a></li>
+      <li><a href="#c2">Воронка продаж</a></li>
+      <li><a href="#c3">Монограмма + стрелка роста</a></li>
+      <li><a href="#c4">Галочка-сделка</a></li>
+      <li><a href="#c5">Вершина / восхождение</a></li>
+      <li><a href="#c6">Мишень / попадание в цель</a></li>
+      <li><a href="#c7">Растущие столбики</a></li>
+      <li><a href="#c8">Стрелки навстречу (переговоры)</a></li>
+      <li><a href="#c9">Экспертная печать</a></li>
+      <li><a href="#c10">Wordmark «ЕЛ.»</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1 -->
+  <section class="concept" id="c1">
     <div class="concept__head">
-      <div>
-        <h2>1. Монограмма «ЕЛ» в круге</h2>
-        <p>Минималистичный знак: тонкая золотая окантовка + золотая линия-подложка под буквами. Развитие текущего лого. Универсален, читается на favicon, легко переводится в гравировку / печать.</p>
-      </div>
+      <h2>1. Монограмма «ЕЛ» в круге</h2>
+      <p>Минималистичный знак: тонкая золотая окантовка и золотая линия-подложка под буквами. Развитие текущего лого, универсален, читается в favicon. Низкий риск, но мало рассказывает о профессии.</p>
     </div>
     <div class="specs">
-      <div class="spec">
-        <h3>На светлом</h3>
-        <img src="logo-1-monogram.svg" width="112" height="112" alt="">
-        <div class="with-wordmark">
-          <img src="logo-1-monogram.svg" width="40" height="40" alt="">
-          <span class="name">Егор Лукшо</span>
-        </div>
-        <span class="label">40 px — как в шапке</span>
-      </div>
-      <div class="spec spec--dark">
-        <h3>На тёмном</h3>
-        <img src="logo-1-monogram.svg" width="112" height="112" alt="">
-        <div class="with-wordmark">
-          <img src="logo-1-monogram.svg" width="40" height="40" alt="">
-          <span class="name">Егор Лукшо</span>
-        </div>
-        <span class="label">40 px</span>
-      </div>
-      <div class="spec spec--brand">
-        <h3>На брендовом</h3>
-        <img src="logo-1-monogram.svg" width="112" height="112" alt="" style="filter:drop-shadow(0 0 0 #fff)">
-        <div class="with-wordmark">
-          <img src="logo-1-monogram.svg" width="40" height="40" alt="">
-          <span class="name">Егор Лукшо</span>
-        </div>
-        <span class="label">40 px</span>
-      </div>
-    </div>
-    <div class="pros">
-      <div><h4>Плюсы</h4><ul>
-        <li>Эволюция текущего — клиенты, видевшие сайт, узнают</li>
-        <li>Хорошо читается в маленьком размере</li>
-        <li>Универсален: подойдёт для печатной продукции, презентаций</li>
-      </ul></div>
-      <div><h4>Минусы</h4><ul>
-        <li>Меньше всего «рассказывает» о продажах — это просто инициалы</li>
-        <li>Похож на сотни других «человек-эксперт» логотипов</li>
-      </ul></div>
+      <div class="spec"><h3>На светлом</h3><img src="logo-1-monogram.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-1-monogram.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px — как в шапке</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-1-monogram.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-1-monogram.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-1-monogram.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-1-monogram.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
     </div>
   </section>
 
-  <!-- CONCEPT 2 -->
-  <section class="concept">
+  <!-- 2 -->
+  <section class="concept" id="c2">
     <div class="concept__head">
-      <div>
-        <h2>2. Воронка продаж</h2>
-        <p>Графический знак — стилизованная воронка продаж (три уровня сужения) с точкой-«закрытой сделкой» внизу. Сразу считывается профессия. Идёт в паре с типографикой имени.</p>
-      </div>
+      <h2>2. Воронка продаж</h2>
+      <p>Графический знак — стилизованная воронка с точкой-«закрытой сделкой» внизу. Сразу считывается профессия, хорошо работает иконкой в соцсетях. Без типографики имени — менее узнаваем.</p>
     </div>
     <div class="specs">
-      <div class="spec">
-        <h3>На светлом</h3>
-        <img src="logo-2-funnel.svg" width="112" height="112" alt="">
-        <div class="with-wordmark">
-          <img src="logo-2-funnel.svg" width="40" height="40" alt="">
-          <span class="name">Егор Лукшо</span>
-        </div>
-        <span class="label">40 px — как в шапке</span>
-      </div>
-      <div class="spec spec--dark">
-        <h3>На тёмном</h3>
-        <img src="logo-2-funnel.svg" width="112" height="112" alt="">
-        <div class="with-wordmark">
-          <img src="logo-2-funnel.svg" width="40" height="40" alt="">
-          <span class="name">Егор Лукшо</span>
-        </div>
-        <span class="label">40 px</span>
-      </div>
-      <div class="spec spec--brand">
-        <h3>На брендовом</h3>
-        <img src="logo-2-funnel.svg" width="112" height="112" alt="">
-        <div class="with-wordmark">
-          <img src="logo-2-funnel.svg" width="40" height="40" alt="">
-          <span class="name">Егор Лукшо</span>
-        </div>
-        <span class="label">40 px</span>
-      </div>
-    </div>
-    <div class="pros">
-      <div><h4>Плюсы</h4><ul>
-        <li>Прямая визуальная метафора — сразу видно, чем занимается</li>
-        <li>Запоминается, отличается от «человек + инициалы»</li>
-        <li>Хорошо работает как иконка в соцсетях, аватарках</li>
-      </ul></div>
-      <div><h4>Минусы</h4><ul>
-        <li>Без слов теряет узнаваемость — всегда нужна типографика имени рядом</li>
-        <li>«Воронка» — типовой образ, может быть у конкурентов</li>
-        <li>На брендовом фоне нижний золотой блок может теряться</li>
-      </ul></div>
+      <div class="spec"><h3>На светлом</h3><img src="logo-2-funnel.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-2-funnel.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-2-funnel.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-2-funnel.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-2-funnel.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-2-funnel.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
     </div>
   </section>
 
-  <!-- CONCEPT 3 -->
-  <section class="concept">
+  <!-- 3 -->
+  <section class="concept" id="c3">
     <div class="concept__head">
-      <div>
-        <h2>3. Монограмма + стрелка роста</h2>
-        <p>Квадратный знак с инициалами «ЕЛ» и золотой стрелкой, проходящей по диагонали — метафора роста выручки/команды. Сочетает узнаваемость (буквы) и смысл (рост).</p>
-      </div>
+      <h2>3. Монограмма + стрелка роста</h2>
+      <p>Квадратный знак: «ЕЛ» с золотой стрелкой по диагонали — метафора роста выручки и команды. Двойное считывание (инициалы + рост), эффектный цветовой акцент.</p>
     </div>
     <div class="specs">
-      <div class="spec">
-        <h3>На светлом</h3>
-        <img src="logo-3-arrow.svg" width="112" height="112" alt="">
-        <div class="with-wordmark">
-          <img src="logo-3-arrow.svg" width="40" height="40" alt="">
-          <span class="name">Егор Лукшо</span>
-        </div>
-        <span class="label">40 px — как в шапке</span>
-      </div>
-      <div class="spec spec--dark">
-        <h3>На тёмном</h3>
-        <img src="logo-3-arrow.svg" width="112" height="112" alt="">
-        <div class="with-wordmark">
-          <img src="logo-3-arrow.svg" width="40" height="40" alt="">
-          <span class="name">Егор Лукшо</span>
-        </div>
-        <span class="label">40 px</span>
-      </div>
-      <div class="spec spec--brand">
-        <h3>На брендовом</h3>
-        <img src="logo-3-arrow.svg" width="112" height="112" alt="">
-        <div class="with-wordmark">
-          <img src="logo-3-arrow.svg" width="40" height="40" alt="">
-          <span class="name">Егор Лукшо</span>
-        </div>
-        <span class="label">40 px</span>
-      </div>
+      <div class="spec"><h3>На светлом</h3><img src="logo-3-arrow.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-3-arrow.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-3-arrow.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-3-arrow.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-3-arrow.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-3-arrow.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="concept" id="c4">
+    <div class="concept__head">
+      <h2>4. Галочка-сделка</h2>
+      <p>Лаконичный знак — большая белая галочка на зелёном круге, с золотым «огоньком» на кончике. Символ закрытой сделки и завершённой работы. Максимально узнаваем в маленьком размере (favicon, аватарка).</p>
+    </div>
+    <div class="specs">
+      <div class="spec"><h3>На светлом</h3><img src="logo-4-check.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-4-check.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-4-check.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-4-check.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-4-check.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-4-check.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
     </div>
     <div class="pros">
-      <div><h4>Плюсы</h4><ul>
-        <li>Двойное считывание: инициалы + рост</li>
-        <li>Стрелка задаёт динамику — отличается от статичных «эксперт-логотипов»</li>
-        <li>Цветовой акцент — золотая стрелка на зелёном квадрате очень эффектна</li>
-      </ul></div>
-      <div><h4>Минусы</h4><ul>
-        <li>В маленьком размере (16-20 px favicon) стрелка может «зашуметь»</li>
-        <li>«Стрелка роста» — тоже частая метафора в бизнес-логотипах</li>
-      </ul></div>
+      <div><h4>Плюсы</h4><ul><li>Максимально узнаваем и считывается</li><li>Прекрасно работает иконкой в любом размере</li><li>Положительная коннотация — «успех», «готово»</li></ul></div>
+      <div><h4>Минусы</h4><ul><li>Галочка — самый «затёртый» символ в бизнесе</li><li>Может ассоциироваться с todo-апами / чекерами, а не с продажами</li></ul></div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="concept" id="c5">
+    <div class="concept__head">
+      <h2>5. Вершина / восхождение</h2>
+      <p>Стилизованные горы с золотой вершиной — метафора пути «от продавца до руководителя ОП», личного и командного роста. Визуально благороден, ассоциируется с амбициями и достижением.</p>
+    </div>
+    <div class="specs">
+      <div class="spec"><h3>На светлом</h3><img src="logo-5-mountain.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-5-mountain.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-5-mountain.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-5-mountain.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-5-mountain.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-5-mountain.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+    </div>
+    <div class="pros">
+      <div><h4>Плюсы</h4><ul><li>Эмоциональная метафора (амбиция, путь)</li><li>Отличается от типовых «корпоративных» лого</li><li>Хорошо в брендинге книги / курса, если будут</li></ul></div>
+      <div><h4>Минусы</h4><ul><li>Прямо не намекает на продажи — горы у мотивационных коучей и стартапов тоже</li><li>Сложнее в маленьком размере (детали вершины могут теряться)</li></ul></div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="concept" id="c6">
+    <div class="concept__head">
+      <h2>6. Мишень / попадание в цель</h2>
+      <p>Три концентрических круга с золотым центром — «попадание в десятку». Метафора результата, точности, KPI. Простой, мощный, читается на любых размерах.</p>
+    </div>
+    <div class="specs">
+      <div class="spec"><h3>На светлом</h3><img src="logo-6-target.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-6-target.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-6-target.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-6-target.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-6-target.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-6-target.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+    </div>
+    <div class="pros">
+      <div><h4>Плюсы</h4><ul><li>Симметричный, идеально вписывается в любую сетку</li><li>Универсальная метафора результата и KPI</li><li>Геометрически безупречен — выглядит «премиально»</li></ul></div>
+      <div><h4>Минусы</h4><ul><li>Чаще ассоциируется с маркетингом / таргетингом</li><li>Концептуально немного «попсово»</li></ul></div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="concept" id="c7">
+    <div class="concept__head">
+      <h2>7. Растущие столбики</h2>
+      <p>Четыре столбика, нарастающих в высоту, с золотым «рекордным» — наглядная метафора роста выручки. Конкретно, по-делу, говорит языком цифр.</p>
+    </div>
+    <div class="specs">
+      <div class="spec"><h3>На светлом</h3><img src="logo-7-bars.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-7-bars.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-7-bars.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-7-bars.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-7-bars.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-7-bars.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+    </div>
+    <div class="pros">
+      <div><h4>Плюсы</h4><ul><li>Прямая визуальная связь с ростом продаж и метриками</li><li>Узнаваемо в маленьком размере</li><li>Соответствует обещанию «×3 оборота», «×4 базы» с сайта</li></ul></div>
+      <div><h4>Минусы</h4><ul><li>Похоже на лого аналитических сервисов / финтеха</li><li>Менее эмоциональное, более «дашбордное»</li></ul></div>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="concept" id="c8">
+    <div class="concept__head">
+      <h2>8. Стрелки навстречу (переговоры)</h2>
+      <p>Две встречные стрелки, сходящиеся в одной точке — метафора переговоров и сделки между сторонами. Учитывая, что у Егора MBA по переговорам, это самая «личная» метафора.</p>
+    </div>
+    <div class="specs">
+      <div class="spec"><h3>На светлом</h3><img src="logo-8-handshake.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-8-handshake.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-8-handshake.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-8-handshake.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-8-handshake.svg" width="112" height="112" alt=""><div class="with-wordmark"><img src="logo-8-handshake.svg" width="40" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">40 px</span></div>
+    </div>
+    <div class="pros">
+      <div><h4>Плюсы</h4><ul><li>Связан с переговорами — ключевая компетенция Егора</li><li>Игра двух цветов (белый + золотой) на брендовом фоне</li><li>Считывается как «win-win»</li></ul></div>
+      <div><h4>Минусы</h4><ul><li>Стрелки навстречу — частый символ в B2B</li><li>В очень маленьком размере (16 px) две стрелки могут «слиться»</li></ul></div>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="concept" id="c9">
+    <div class="concept__head">
+      <h2>9. Экспертная печать</h2>
+      <p>Знак в виде сертификационной печати: круговая надпись «ЕГОР ЛУКШО · ТРЕНЕР ПО ПРОДАЖАМ» вокруг монограммы «ЕЛ». Подчёркивает экспертный статус, ассоциируется с дипломами.</p>
+    </div>
+    <div class="specs">
+      <div class="spec"><h3>На светлом</h3><img src="logo-9-stamp.svg" width="120" height="120" alt=""><div class="with-wordmark"><img src="logo-9-stamp.svg" width="44" height="44" alt=""><span class="name">Егор Лукшо</span></div><span class="label">44 px — деталям нужно больше места</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-9-stamp.svg" width="120" height="120" alt=""><div class="with-wordmark"><img src="logo-9-stamp.svg" width="44" height="44" alt=""><span class="name">Егор Лукшо</span></div><span class="label">нужен инверс-вариант</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-9-stamp.svg" width="120" height="120" alt=""><div class="with-wordmark"><img src="logo-9-stamp.svg" width="44" height="44" alt=""><span class="name">Егор Лукшо</span></div><span class="label">нужен инверс-вариант</span></div>
+    </div>
+    <div class="pros">
+      <div><h4>Плюсы</h4><ul><li>Ощущение «сертифицированного эксперта»</li><li>Самодостаточен — содержит имя и специализацию</li><li>Хорошо на печатной продукции, документах, презентациях</li></ul></div>
+      <div><h4>Минусы</h4><ul><li>Не работает в favicon — мелкий текст превращается в шум</li><li>Стилистика «печати» может казаться старомодной</li><li>Тёмные фоны требуют инверс-версии</li></ul></div>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="concept" id="c10">
+    <div class="concept__head">
+      <h2>10. Wordmark «ЕЛ.»</h2>
+      <p>Чистый типографический логотип: жирные «ЕЛ» с золотой точкой. Без иконок и графики — европейский подход в духе модных брендов. Уверенный, лаконичный.</p>
+    </div>
+    <div class="specs">
+      <div class="spec"><h3>На светлом</h3><img src="logo-10-wordmark.svg" width="180" alt=""><div class="with-wordmark"><img src="logo-10-wordmark.svg" height="40" alt=""><span class="name">Егор Лукшо</span></div><span class="label">высота 40 px</span></div>
+      <div class="spec spec--dark"><h3>На тёмном</h3><img src="logo-10-wordmark.svg" width="180" alt="" style="filter:invert(.92) hue-rotate(180deg) saturate(1.2)"><div class="with-wordmark"><img src="logo-10-wordmark.svg" height="40" alt="" style="filter:invert(.92) hue-rotate(180deg) saturate(1.2)"><span class="name">Егор Лукшо</span></div><span class="label">нужен инверс-вариант</span></div>
+      <div class="spec spec--brand"><h3>На брендовом</h3><img src="logo-10-wordmark.svg" width="180" alt="" style="filter:invert(1) brightness(1.8)"><div class="with-wordmark"><img src="logo-10-wordmark.svg" height="40" alt="" style="filter:invert(1) brightness(1.8)"><span class="name">Егор Лукшо</span></div><span class="label">нужен инверс-вариант</span></div>
+    </div>
+    <div class="pros">
+      <div><h4>Плюсы</h4><ul><li>Максимально лаконичный и «европейский»</li><li>Без графики — невозможно случайно повторить</li><li>Подходит для премиум-позиционирования</li></ul></div>
+      <div><h4>Минусы</h4><ul><li>На favicon будет просто «ЕЛ»</li><li>Без поясняющей графики не намекает на продажи</li><li>Нужны явные инверс-варианты для тёмных фонов</li></ul></div>
     </div>
   </section>
 
   <p style="color:var(--ink-mute); font-size:.9rem; margin-top:40px">
-    После выбора — заменим текстовый «ЕЛ» в шапке на выбранный SVG и сделаем favicon в нужных размерах (16, 32, 180, 512).
+    После выбора одного варианта (или гибрида) — заменим текстовый «ЕЛ» в шапке сайта и сгенерируем favicon-набор (16, 32, 180, 512 px).
   </p>
 </div>
 </body>
