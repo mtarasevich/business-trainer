@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Егор Лукшо — монограмма">
+  <circle cx="60" cy="60" r="58" fill="#15623C"/>
+  <circle cx="60" cy="60" r="53" fill="none" stroke="#C9A24A" stroke-width="1.2" opacity=".55"/>
+  <text x="60" y="76" text-anchor="middle"
+        font-family="Manrope, 'Segoe UI', Inter, sans-serif"
+        font-weight="800" font-size="46"
+        fill="#FFFFFF" letter-spacing="-1.5">ЕЛ</text>
+  <rect x="44" y="86" width="32" height="2" rx="1" fill="#C9A24A"/>
+</svg>

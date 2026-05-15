@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Егор Лукшо — монограмма со стрелкой роста">
+  <rect x="2" y="2" width="116" height="116" rx="22" fill="#15623C"/>
+  <!-- ЕЛ monogram -->
+  <text x="58" y="78" text-anchor="middle"
+        font-family="Manrope, 'Segoe UI', Inter, sans-serif"
+        font-weight="800" font-size="50"
+        fill="#FFFFFF" letter-spacing="-1.5">ЕЛ</text>
+  <!-- Growth arrow: diagonal from bottom-left rising through top-right corner -->
+  <g stroke="#C9A24A" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M22 96 L60 60 L100 24"/>
+    <!-- arrowhead -->
+    <path d="M88 22 L100 24 L98 36"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Егор Лукшо — воронка продаж">
+  <rect x="2" y="2" width="116" height="116" rx="22" fill="#FBFCFA" stroke="#15623C" stroke-width="2"/>
+  <!-- Sales funnel: 3 trapezoids narrowing down -->
+  <path d="M28 30 H92 L82 50 H38 Z" fill="#1E7F4F"/>
+  <path d="M40 56 H80 L72 76 H48 Z" fill="#15623C"/>
+  <path d="M50 82 H70 L65 100 H55 Z" fill="#C9A24A"/>
+  <!-- subtle dot at the very bottom — closed deal -->
+  <circle cx="60" cy="106" r="3" fill="#15623C"/>
+</svg>
